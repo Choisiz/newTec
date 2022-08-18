@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <div x-data="{open:false}">
+        <button x-on:click="open =!open">Add on</button>
+        <div x-show="open" x-transition>
+            <h1>보여주자</h1>
+        </div>
+    </div>
+</body>
+</html>
